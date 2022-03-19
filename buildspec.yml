@@ -1,5 +1,9 @@
 version: 0.2
 
+eb_codebuild_settings:
+  CodeBuildServiceRole: aws-cloudbuild-elasticbeanstalk
+  ComputeType: BUILD_GENERAL1_SMALL
+
 phases:
   install:
     runtime-versions:
