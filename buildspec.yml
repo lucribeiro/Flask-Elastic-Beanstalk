@@ -1,5 +1,9 @@
 version: 0.2
 
+eb_codebuild_settings:
+    CodeBuildServiceRole: CodeBuildServiceRole
+    ComputeType: BUILD_GENERAL1_SMALL
+
 phases:
   install:
     runtime-versions:
@@ -14,7 +18,3 @@ phases:
   build:
     commands:
       - make deploy
-      
-  eb_codebuild_settings:
-    CodeBuildServiceRole: CodeBuildServiceRole
-    ComputeType: BUILD_GENERAL1_SMALL
